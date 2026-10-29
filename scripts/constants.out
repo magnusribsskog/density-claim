@@ -1,0 +1,17 @@
+PASS  series of A(z) has the recurrence's coefficients: 1, 1, 0, 0, ... (exact)
+PASS  A(1/15) = 240: 240 (exact rational)
+PASS  lambda = 7 + sqrt 63 solves x^2 = 14x + 14: residual 0.0e-56
+PASS  lambda = 14.937253933...: 14.9372539331937717715...
+PASS  lambda / 15 ~ 0.9958169: 0.995816928879...
+PASS  1/(1 - log_15 lambda) ~ 646.028: 646.028285
+PASS  closed form C lambda^n + D mu^n reproduces a_n: n = 0..39
+PASS  leading coefficient ~ 1.00395: 1.0039526306...
+PASS  a_1939 >= 15^1936: exact integer comparison
+PASS  1939 > 3 x 646.03: 3 x 646.03 = 1938.09
+INFO  largest n <= 10000 with a_n >= 15^(n-3): 1939   (not claimed in the note; reported)
+PASS  ln(15^n / a_n) at n = 10000 ~ 41.91 nats: 41.9145 nats = 10^18.20
+INFO  against 15^(n-3) instead: 33.7904 nats   (the note's text does not fix which is meant)
+PASS  lambda^-6 ~ 9.0028e-8: 9.002755e-8
+PASS  15^-6 ~ 8.7791e-8: 8.779150e-8
+
+ALL PASS
