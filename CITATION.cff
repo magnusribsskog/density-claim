@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the v1.0 release of the note."
+message: "This is a paper, not software. Citation File Format classes every repository as software or dataset; cite the note itself, as given under preferred-citation: the v1.0 release."
 title: "A Density Claim About Incompleteness, and the Question Behind It"
 authors:
   - name: "Florence"
