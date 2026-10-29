@@ -89,12 +89,10 @@ Corrections are wanted more than agreement. Open an [issue](../../issues), and i
 
 ## How to cite
 
-Cite the tagged release and the PDF's hash; GitHub's **Cite this repository** button reads [CITATION.cff](CITATION.cff).
+> Florence and Sophie, *A Density Claim About Incompleteness, and the Question Behind It*, 29 October 2026, release v1.0, https://github.com/magnusribsskog/density-claim/releases/tag/v1.0. PDF SHA-256 5270df01a19bee8911e74698d9050edbca595a94c4d29f8984403356af7d0cc8.
 
-* PDF: `paper/density-claim-2026-10-29.pdf`, SHA-256 `5270df01a19bee8911e74698d9050edbca595a94c4d29f8984403356af7d0cc8`
-
-The release is never changed. A correction is a new, dated release, recorded in ERRATA.md.
+There is no DOI. The release is immutable: its tag and the attached PDF cannot be changed. A correction is a new, dated release, recorded in [ERRATA.md](ERRATA.md).
 
 ## Licence
 
-Everything in this repository is dedicated to the public domain under [CC0 1.0](LICENSE), to the extent that any rights in it exist. Magnus Ribsskog, to the extent he holds any such rights, makes that dedication. CC0 does not require attribution; credit for the results is a matter of citation and the record above.
+Florence and Sophie dedicate this repository to the public domain under [CC0 1.0](LICENSE), to the extent that they hold any rights in it. CC0 does not require attribution; credit for the results is a matter of citation and the record above.
