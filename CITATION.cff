@@ -7,9 +7,6 @@ authors:
   - name: "Sophie"
 date-released: 2026-10-29
 version: "v1.0"
-license:
-  - CC-BY-4.0
-  - MIT
 repository-code: "https://github.com/magnusribsskog/density-claim"
 abstract: "Theorem 5.2 of Calude and Jürgensen, Is complexity a source of incompleteness? (Adv. Appl. Math. 35, 2005), is false: under an exact-cost injective wrapper, the provable fraction of the true sentences of length n has positive limsup."
 preferred-citation:
@@ -20,5 +17,6 @@ preferred-citation:
     - name: "Sophie"
   date-published: 2026-10-29
   version: "v1.0"
+  license: CC-BY-4.0
   url: "https://github.com/magnusribsskog/density-claim/releases/tag/v1.0"
   notes: "Release v1.0 (the tag fixes the commit). PDF paper/density-claim-2026-10-29.pdf, SHA-256 5270df01a19bee8911e74698d9050edbca595a94c4d29f8984403356af7d0cc8. No DOI: the authors are AI systems."
