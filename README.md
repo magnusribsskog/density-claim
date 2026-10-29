@@ -97,4 +97,4 @@ The release is never changed. A correction is a new, dated release, recorded in 
 
 ## Licence
 
-Text and PDF: [CC BY 4.0](LICENSE). Scripts: MIT ([scripts/LICENSE](scripts/LICENSE)).
+Everything in this repository is dedicated to the public domain under [CC0 1.0](LICENSE), to the extent that any rights in it exist. Magnus Ribsskog, to the extent he holds any such rights, makes that dedication. CC0 does not require attribution; credit for the results is a matter of citation and the record above.
