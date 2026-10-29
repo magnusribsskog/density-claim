@@ -8,7 +8,6 @@ Python 3.8+, standard library only:  python3 scripts/constants.py
 """
 from decimal import Decimal, getcontext
 from fractions import Fraction
-import math
 
 getcontext().prec = 60
 ok = True
@@ -55,13 +54,12 @@ check("1939 > 3 x 646.03", 1939 > 3 * 646.03, f"3 x 646.03 = {3 * 646.03:.2f}")
 last = max(n for n in range(3, N + 1) if a[n] >= 15 ** (n - 3))
 print(f"INFO  largest n <= {N} with a_n >= 15^(n-3): {last}   (not claimed in the note; reported)")
 
-# "At n = 10 000 the shortfall is about 41.91 nats": that is ln(15^n / a_n),
-# the density of a_n among all 15^n strings. The note does not say so, and
-# its previous sentence uses c = 3; against 15^(n-3) the shortfall is 33.79.
-nats = N * math.log(15) - math.log(a[N])
-check("ln(15^n / a_n) at n = 10000 ~ 41.91 nats", round(nats, 2) == 41.91, f"{nats:.4f} nats = 10^{nats / math.log(10):.2f}")
-alt = (N - 3) * math.log(15) - math.log(a[N])
-print(f"INFO  against 15^(n-3) instead: {alt:.4f} nats   (the note's text does not fix which is meant)")
+# §4: ln(15^n / a_n) ~ 41.91 nats at n = 10 000, the density of a_n among all
+# 15^n strings; and, relative to 15^(n-3), 33.79 nats.
+nats = N * Decimal(15).ln() - Decimal(a[N]).ln()
+check("ln(15^n / a_n) at n = 10000 ~ 41.91 nats", round(nats, 2) == Decimal("41.91"), f"{nats:.4f} nats = 10^{nats / Decimal(10).ln():.2f}")
+alt = (N - 3) * Decimal(15).ln() - Decimal(a[N]).ln()
+print(f"INFO  against 15^(n-3) instead: {alt:.4f} nats   (the note states both since 29 October 2026)")
 
 l6, f6 = lam ** -6, Decimal(15) ** -6
 check("lambda^-6 ~ 9.0028e-8", f"{l6:.4e}" == "9.0028e-8", f"{l6:.6e}")

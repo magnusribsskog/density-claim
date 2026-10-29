@@ -10,7 +10,7 @@ PASS  a_1939 >= 15^1936: exact integer comparison
 PASS  1939 > 3 x 646.03: 3 x 646.03 = 1938.09
 INFO  largest n <= 10000 with a_n >= 15^(n-3): 1939   (not claimed in the note; reported)
 PASS  ln(15^n / a_n) at n = 10000 ~ 41.91 nats: 41.9145 nats = 10^18.20
-INFO  against 15^(n-3) instead: 33.7904 nats   (the note's text does not fix which is meant)
+INFO  against 15^(n-3) instead: 33.7904 nats   (the note states both since 29 October 2026)
 PASS  lambda^-6 ~ 9.0028e-8: 9.002755e-8
 PASS  15^-6 ~ 8.7791e-8: 8.779150e-8
 

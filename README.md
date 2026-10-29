@@ -6,7 +6,7 @@
 > C. S. Calude and H. Jürgensen, *Is complexity a source of incompleteness?*, Adv. Appl. Math. 35 (2005) 1–15, Theorem 5.2:
 > "the probability that a true sentence of length *n* is provable in the theory tends to zero when *n* tends to infinity, while the probability that a sentence of length *n* is true is strictly positive."
 
-**The first clause is false.** In any syntax with an injective wrapper that sends every sentence to a theorem exactly *d* symbols longer, and with sentences at every sufficiently large length, the provable fraction of the true sentences of length *n* has **limsup** at least *Q*<sup>−<i>d</i></sup>. For infix syntax over the paper's 15-letter alphabet the wrapper is (0=0∨φ) and the bound is 15<sup>−6</sup>.
+**The first clause is false.** For a sound theory *T* extending Robinson's **Q**, in any syntax with an injective wrapper that sends every sentence to a theorem exactly *d* symbols longer, and with sentences at every sufficiently large length, the provable fraction of the true sentences of length *n* has **limsup** at least *Q*<sup>−<i>d</i></sup>. For infix syntax over the paper's 15-letter alphabet the wrapper is (0=0∨φ) and the bound is 15<sup>−6</sup>.
 
 **What this does not claim.** We prove a positive limsup. We do not claim a positive liminf, and we do not claim that the limit exists. The hypotheses are stated as hypotheses, because the paper fixes no formation rules; infix syntax is one instance, not the paper's definition.
 
@@ -29,6 +29,8 @@ The padding of §2 is Saeed Salehi's (arXiv:2310.14807, 2023). Counting syntacti
 * True<sub><i>n</i></sub>: the number of those true in the standard model.
 
 Soundness gives <i>t</i><sub><i>n</i></sub> ≤ True<sub><i>n</i></sub> ≤ <i>s</i><sub><i>n</i></sub> ≤ *Q*<sup><i>n</i></sup>.
+
+The infix instance fixes every symbol count: atomic formulae are bare, as in 0=0 (three symbols); negation is ¬φ, unbracketed; binary formulae are fully bracketed, (φ∨ψ), costing |φ| + |ψ| + 3.
 
 ## 2. Theorem A: the provable fraction does not tend to zero
 
@@ -81,7 +83,7 @@ The rest of the note (Theorem B, the failure of the uniform bound, scope, and th
 * **The hypotheses (W).** Theorem A needs an injective wrapper of *exact* cost *d*; an additive upper bound on its cost is not enough for the argument as given. Whether a variable cost in [1, *d*] would do is the most likely place for a strong reader to push.
 * **Eventual positivity.** If a syntax has sentences only at lengths in a fixed residue class, the statement must be adjusted.
 * **Lemma 1** is the only non-trivial step. It assumes no regularity of the sequence, and it gives nothing about the liminf of the ratio.
-* **The constants of §4.** Run `python3 scripts/constants.py` (Python 3.8+, standard library). It checks exact claims exactly (integer and rational arithmetic) and real-valued ones to 60 digits. It checks numbers, not proofs. Its output when this release was made is in [scripts/constants.out](scripts/constants.out).
+* **The constants of §4.** Run `python3 scripts/constants.py` (Python 3.8+, standard library). It checks exact claims exactly (integer and rational arithmetic) and real-valued ones with 60-digit decimals, to the precision the note displays. It checks numbers, not proofs. Its output when this release was made is in [scripts/constants.out](scripts/constants.out).
 
 Corrections are wanted more than agreement. Open an [issue](../../issues), and it will be answered and, if right, entered in [ERRATA.md](ERRATA.md) with credit.
 
