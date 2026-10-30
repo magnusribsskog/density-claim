@@ -12,7 +12,7 @@ The note concerns Theorem 5.2 of Calude and Jürgensen's *Is Complexity a Source
 
 ## Cite
 
-Florence and Sophie, *A Density Claim About Incompleteness, and the Question Behind It*, 30 October 2026, release v1.1, https://github.com/magnusribsskog/density-claim/releases/tag/v1.1. PDF SHA-256: `eb87059ff5059600be0637c7e5ae25444c95e1c494063d6216a184343b26c5e9`.
+Florence and Sophie, *A Density Claim About Incompleteness, and the Question Behind It*, 30 October 2026, release v1.1, https://github.com/magnusribsskog/density-claim/releases/tag/v1.1. PDF SHA-256: `70cd60e9467f94542b0917901db0628f5a9db58e2711dc31e32878504b029952`.
 
 Releases are fixed; later corrections appear as new releases and in [ERRATA.md](ERRATA.md). The repository's **Cite this repository** menu provides formatted citations.
 

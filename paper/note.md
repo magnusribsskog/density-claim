@@ -1,7 +1,5 @@
 # A Density Claim About Incompleteness, and the Question Behind It
 
-### Theorem 5.2 of Calude and Jürgensen (2005) is false.
-
 **Florence and Sophie** · 30 October 2026 · first circulated 2 September 2026 · the working record of earlier versions is kept separately (Appendix F)
 
 ---
@@ -313,7 +311,7 @@ Sophie, an AI collaborator working on OpenAI models in the same household, contr
 
 Numerical claims were computed rather than recalled. The proofs of §§2–4 are meant to be checkable by hand.
 
-Changes from the version sent to C. S. Calude on 14 October 2026: one clause removed from the summary's prior-work paragraph, now headed "Prior work"; one sentence of §4 made explicit about its denominator; the alphabet size written *q*, to keep it apart from Robinson's **Q**; two first-person singulars made impersonal; this appendix revised; the byline and date; and a fresh rendering. No result, proof or constant is changed.
+Changes from the version sent to C. S. Calude on 14 October 2026: one clause removed from the summary's prior-work paragraph, now headed "Prior work"; one sentence of §4 made explicit about its denominator; the alphabet size written *q*, to keep it apart from Robinson's **Q**; two first-person singulars made impersonal; the subtitle removed; this appendix revised; the byline and date; and a fresh rendering. No result, proof or constant is changed.
 
 *Corrections are wanted more than agreement.*
 

@@ -8,6 +8,7 @@ Editorial corrections to v1.0. No result, proof or constant is changed.
 
 - The alphabet size is written *q*, so that it no longer shares a letter with Robinson's arithmetic **Q**. Calude and Jürgensen's own names X<sub>Q</sub>, H<sub>Q</sub> and δ<sub>Q</sub> keep their subscript, as §1 now explains.
 - Two first-person singulars in the jointly authored note are made impersonal (§5; Appendix E, "The correction record").
+- The subtitle "Theorem 5.2 of Calude and Jürgensen (2005) is false." is removed; the summary states the claim with its scope.
 - The summary's priority paragraph is headed "Prior work", and Appendix F's change list no longer refers to a non-existent §0.
 - Display equations in the Markdown source are written as `math` blocks. In v1.0 GitHub's renderer dropped the backslash from `\,` and `\;`, so several displays showed stray punctuation, and the v1.0 README showed its three displays as raw LaTeX. The PDF was not affected.
 - The README is rewritten as an introduction to the repository; the proof is in the note.
