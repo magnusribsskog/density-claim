@@ -4,7 +4,9 @@ Every correction to a published release is listed here, newest first, with
 the release it applies to, what was wrong, who found it, and the release that
 fixes it. A release is never edited after it is tagged.
 
-None yet.
+None to the paper.
+
+- 2026-10-30, README on main only: its three display equations were written as `$$…$$` and GitHub showed them as raw LaTeX. They are now `math` blocks. The README inside the v1.0 tag still has the raw form; the PDF and note are unaffected.
 
 ## Before the first public release
 

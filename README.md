@@ -38,7 +38,9 @@ The infix instance fixes every symbol count: atomic formulae are bare, as in 0=0
 
 **Lemma 1.** Let (<i>c</i><sub><i>n</i></sub>) be integers, eventually positive, with *a* = liminf<sub><i>n</i></sub> <i>c</i><sub><i>n</i></sub><sup>1/<i>n</i></sup> finite. Then for every fixed *d* ≥ 1,
 
-$$\limsup_{n \to \infty} \frac{c_{n-d}}{c_n} \;\ge\; a^{-d}.$$
+```math
+\limsup_{n \to \infty} \frac{c_{n-d}}{c_n} \;\ge\; a^{-d}.
+```
 
 *Proof.* Note *a* ≥ 1. Suppose the limsup is less than *a*<sup>−<i>d</i></sup>, and choose *r* strictly between them. Then <i>c</i><sub><i>n</i></sub> ≥ *r*<sup>−1</sup><i>c</i><sub><i>n</i>−<i>d</i></sub> for all *n* ≥ *N*, with *N* past the point where the sequence is positive. Iterate within each of the *d* residue classes modulo *d*: for *n* ≥ *N* in the class of *N* + *j* (0 ≤ *j* < *d*), <i>c</i><sub><i>n</i></sub> ≥ *r*<sup>−(<i>n</i>−<i>N</i>−<i>j</i>)/<i>d</i></sup><i>c</i><sub><i>N</i>+<i>j</i></sub>. Put *C* = min<sub>0≤<i>j</i><<i>d</i></sub> <i>c</i><sub><i>N</i>+<i>j</i></sub>·<i>r</i><sup>(<i>N</i>+<i>j</i>)/<i>d</i></sup> > 0; then <i>c</i><sub><i>n</i></sub> ≥ *C r*<sup>−<i>n</i>/<i>d</i></sup> for all *n* ≥ *N*. Hence *a* ≥ *r*<sup>−1/<i>d</i></sup> > *a*, a contradiction. ∎
 
@@ -60,13 +62,17 @@ The mechanism is general. Theorems are closed upward under logical consequence a
 
 **Theorem A.** Under (W), with *a<sub>s</sub>* = liminf<sub><i>n</i></sub> <i>s</i><sub><i>n</i></sub><sup>1/<i>n</i></sup>,
 
-$$\limsup_n \frac{t_n}{\mathrm{True}_n} \;\ge\; \limsup_n \frac{t_n}{s_n} \;\ge\; a_s^{-d} \;\ge\; Q^{-d}.$$
+```math
+\limsup_n \frac{t_n}{\mathrm{True}_n} \;\ge\; \limsup_n \frac{t_n}{s_n} \;\ge\; a_s^{-d} \;\ge\; Q^{-d}.
+```
 
 *The probability that a true sentence of length n is provable does not tend to zero.* In infix syntax the bound is at least 15<sup>−6</sup> ≈ 8.78·10<sup>−8</sup>.
 
 *Proof.* The wrapper injects the sentences of length *n* − *d* into the theorems of length *n*, so <i>t</i><sub><i>n</i></sub> ≥ <i>s</i><sub><i>n</i>−<i>d</i></sub>, and the denominators below are eventually non-zero. With True<sub><i>n</i></sub> ≤ <i>s</i><sub><i>n</i></sub>, pointwise,
 
-$$\frac{t_n}{\mathrm{True}_n} \;\ge\; \frac{t_n}{s_n} \;\ge\; \frac{s_{n-d}}{s_n},$$
+```math
+\frac{t_n}{\mathrm{True}_n} \;\ge\; \frac{t_n}{s_n} \;\ge\; \frac{s_{n-d}}{s_n},
+```
 
 and Lemma 1 applies with <i>c</i><sub><i>n</i></sub> = <i>s</i><sub><i>n</i></sub>. ∎
 
