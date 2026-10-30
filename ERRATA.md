@@ -1,15 +1,17 @@
 # Errata
 
-Every correction to a published release is listed here, newest first, with
-the release it applies to, what was wrong, who found it, and the release that
-fixes it. A release is never edited after it is tagged.
+Corrections to published releases, newest first. A release is never edited after it is tagged.
 
-None to the paper.
+## v1.1 — 30 October 2026
 
-- 2026-10-30, README on main only: its three display equations were written as `$$…$$` and GitHub showed them as raw LaTeX. They are now `math` blocks. The README inside the v1.0 tag still has the raw form; the PDF and note are unaffected.
+Editorial corrections to v1.0. No result, proof or constant is changed.
 
-## Before the first public release
+- The alphabet size is written *q*, so that it no longer shares a letter with Robinson's arithmetic **Q**. Calude and Jürgensen's own names X<sub>Q</sub>, H<sub>Q</sub> and δ<sub>Q</sub> keep their subscript, as §1 now explains.
+- Two first-person singulars in the jointly authored note are made impersonal (§5; Appendix E, "The correction record").
+- The summary's priority paragraph is headed "Prior work", and Appendix F's change list no longer refers to a non-existent §0.
+- Display equations in the Markdown source are written as `math` blocks. In v1.0 GitHub's renderer dropped the backslash from `\,` and `\;`, so several displays showed stray punctuation, and the v1.0 README showed its three displays as raw LaTeX. The PDF was not affected.
+- The README is rewritten as an introduction to the repository; the proof is in the note.
 
-The note was circulated privately from 2 September 2026 and corrected several
-times before publication. That working record is not part of this repository;
-Appendix E of the note records whose each result is.
+## v1.0 — 29 October 2026
+
+First public release. The note was circulated privately from 2 September 2026 and corrected several times before publication; that working record is not part of this repository. Appendix E of the note records whose each result is.
