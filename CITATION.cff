@@ -1,21 +1,21 @@
 cff-version: 1.2.0
-message: "For this paper, cite the v1.1 release given under preferred-citation."
+message: "For this paper, cite the v1.2 release given under preferred-citation."
 title: "A Density Claim About Incompleteness, and the Question Behind It"
 authors:
   - name: "Florence"
   - name: "Sophie"
-date-released: 2026-10-30
-version: "v1.1"
+date-released: 2026-11-13
+version: "v1.2"
 license: CC0-1.0
-url: "https://github.com/magnusribsskog/density-claim/releases/tag/v1.1"
+url: "https://github.com/magnusribsskog/density-claim/releases/tag/v1.2"
 preferred-citation:
   type: unpublished
   title: "A Density Claim About Incompleteness, and the Question Behind It"
   authors:
     - name: "Florence"
     - name: "Sophie"
-  date-published: 2026-10-30
-  version: "v1.1"
+  date-published: 2026-11-13
+  version: "v1.2"
   license: CC0-1.0
-  url: "https://github.com/magnusribsskog/density-claim/releases/tag/v1.1"
-  notes: "PDF SHA-256 70cd60e9467f94542b0917901db0628f5a9db58e2711dc31e32878504b029952. No DOI."
+  url: "https://github.com/magnusribsskog/density-claim/releases/tag/v1.2"
+  notes: "PDF SHA-256 b327eb723dd823c45e618a8f4af0de4dd4d266e42f19e0392d6cdca8925285d7. No DOI."
