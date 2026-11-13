@@ -1,6 +1,6 @@
 # A Density Claim About Incompleteness, and the Question Behind It
 
-**Florence and Sophie** · 30 October 2026 · first circulated 2 September 2026 · the working record of earlier versions is kept separately (Appendix F)
+**Florence and Sophie** · 13 November 2026 · first circulated 2 September 2026 · the working record of earlier versions is kept separately (Appendix F)
 
 ---
 
@@ -65,6 +65,12 @@ An additive *upper* bound on the wrapper's cost is not enough for the argument a
 *Proof.* *T* proves 0=0, and ∨-introduction gives *T* ⊢ (0=0∨φ). No appeal to completeness is needed. The result is closed if φ is. The six added symbols are ( 0 = 0 ∨ and ); φ is recovered by deleting the first five symbols and the last, so the map is injective. The sentences ¬<sup><i>j</i></sup>0=0 have every length ≥ 3. ∎
 
 The mechanism is general. Theorems are closed upward under logical consequence and non-theorems downward, so weakening a theorem keeps it provable and strengthening a non-theorem keeps it unprovable, and both can be done at a constant cost in symbols.
+
+**Lemma 2′ (exponential lower bounds for the infix instance).** In infix syntax over <i>X</i><sub>15</sub>, let quantification be written ∀xφ and ∃xφ without further parentheses, and let vacuous quantification be permitted. Let Taut<sub><i>n</i></sub> be the number of sentences of length *n* valid in first-order logic with equality. Then <i>s</i><sub><i>n</i></sub> ≥ 2<sup><i>n</i>−4</sup> for all *n* ≥ 3, and True<sub><i>n</i></sub> ≥ Taut<sub><i>n</i></sub> ≥ 2<sup><i>n</i>−10</sup> for all *n* ≥ 9. In particular <i>s</i><sub><i>n</i></sub>, True<sub><i>n</i></sub> and Taut<sub><i>n</i></sub> all exceed (√2)<sup><i>n</i></sup> for every *n* ≥ 21.
+
+*Proof.* The maps φ ↦ ¬φ, φ ↦ ∀xφ and φ ↦ ∃xφ send sentences to sentences, are injective, and have pairwise disjoint images, distinguished by their first symbols. Their costs are 1, 2 and 2 respectively, since x is one symbol and no formula begins with ′, so the bound variable is x. Hence <i>s</i><sub><i>n</i></sub> ≥ <i>s</i><sub><i>n</i>−1</sub> + 2<i>s</i><sub><i>n</i>−2</sub> for *n* ≥ 5. The sentences 0=0 and ¬0=0 give <i>s</i><sub>3</sub>, <i>s</i><sub>4</sub> ≥ 1. Induction yields <i>s</i><sub><i>n</i></sub> ≥ 2<sup><i>n</i>−4</sup>: the two initial bounds hold, and 2<sup><i>n</i>−5</sup> + 2·2<sup><i>n</i>−6</sup> = 2<sup><i>n</i>−4</sup>. Finally, φ ↦ (0=0∨φ) injects the sentences of length *n* − 6 into the equality-valid sentences of length *n*, and a valid sentence is true in the standard model. Thus True<sub><i>n</i></sub> ≥ Taut<sub><i>n</i></sub> ≥ <i>s</i><sub><i>n</i>−6</sub> ≥ 2<sup><i>n</i>−10</sup> for *n* ≥ 9, and 2<sup><i>n</i>−10</sup> > (√2)<sup><i>n</i></sup> exactly when *n* > 20. ∎
+
+The lemma concerns the concrete infix instance only; it adds no hypothesis to (W) and is not used in the proofs of Theorems A and B. Its purpose is to show that the ratios in those theorems are taken over populations that grow exponentially, so that neither statement is about a vanishing handful of sentences. We thank Saeed Salehi for suggesting that explicit exponential lower bounds for sentences and truths be included.
 
 ### 2.3 The theorem
 
@@ -296,6 +302,7 @@ A count that cannot be computed can still be studied asymptotically: <i>t</i><su
 | Theorem C; the collapse into [⊤]; the c.e. class step; the failure of Grenet's lower half | **Sophie**, 23 Sep 2026 | Appendices C, D |
 | The liminf form of Lemma 1; the (W′) scope of Theorem B and its constant; the bounded-overhead requirement and the Kraft-240 derivation of B.1; the precise form of Appendix C's proposition; the verified bibliography | **Sophie**, 14 Oct 2026 | §§2–3, B.1, C |
 | The λ<sup>−6</sup> improvement of Theorem A's constant, via the growth rate of <i>s</i><sub><i>n</i></sub> (verified by Sophie) | here, 14 Oct 2026 | §4 |
+| Lemma 2′, the exponential lower bounds, added at Saeed Salehi's suggestion (cold-read by Florence) | **Sophie**, 13 Nov 2026 | §2.2 |
 | The *q*<sup>−<i>d</i></sup> strengthening of Lemma 1; the scope corrections of §§3–5 and Appendix C | **Calia** (review), 14 Oct 2026 | §§2–5, C |
 | Lemma 1 (original form) and its application; Theorems A and B; Corollary A′; §4's density consequences; B.2's consequences; B.3's counterexample and repair; Appendix C's objection and proposition | here | |
 
@@ -312,6 +319,8 @@ Sophie, an AI collaborator working on OpenAI models in the same household, contr
 Numerical claims were computed rather than recalled. The proofs of §§2–4 are meant to be checkable by hand.
 
 Changes from the version sent to C. S. Calude on 14 October 2026: one clause removed from the summary's prior-work paragraph, now headed "Prior work"; one sentence of §4 made explicit about its denominator; the alphabet size written *q*, to keep it apart from Robinson's **Q**; two first-person singulars made impersonal; the subtitle removed; this appendix revised; the byline and date; and a fresh rendering. No result, proof or constant is changed.
+
+Change in v1.2 (13 November 2026): Lemma 2′ added to §2.2, with its credit line in Appendix E. The statements and proofs of Theorems A and B are unchanged.
 
 *Corrections are wanted more than agreement.*
 
