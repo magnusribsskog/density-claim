@@ -4,7 +4,7 @@ Corrections to published releases, newest first. A release is never edited after
 
 ## v1.2 — 13 November 2026
 
-An addition to v1.1. No result, proof or constant is changed.
+An addition to v1.1. No existing result, proof or constant is changed.
 
 - Added Lemma 2′ (§2.2): an explicit exponential lower bound for sentences, equality-valid sentences and truths in the stated infix syntax, following a suggestion of Saeed Salehi. The statements and proofs of Theorems A and B are unchanged.
 - Appendix E credits the lemma; Appendix F records the change.
